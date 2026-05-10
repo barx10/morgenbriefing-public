@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--background: #f6f2ea;
+	--foreground: #17130f;
+	--ink: #111827;
+	--panel: rgba(255, 253, 248, 0.82);
+	--panel-strong: rgba(255, 253, 248, 0.96);
+	--line: rgba(23, 19, 15, 0.11);
+	--accent: #b7792f;
+	--accent-strong: #8e5520;
+	--sage: #6f8375;
+	--blue: #213849;
+	--muted: #675f54;
+	--shadow: 0 28px 90px rgba(25, 22, 18, 0.14);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	background:
+		linear-gradient(rgba(23, 19, 15, 0.025) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(23, 19, 15, 0.022) 1px, transparent 1px),
+		linear-gradient(135deg, #fbf8f1 0%, #efe8dc 45%, #f7f4ee 100%);
+	background-size: 44px 44px, 44px 44px, auto;
+}
+
+body::before {
+	content: "";
+	position: fixed;
+	inset: 0;
+	pointer-events: none;
+	z-index: 0;
+	background-image: radial-gradient(rgba(23, 19, 15, 0.075) 0.7px, transparent 0.7px);
+	background-size: 4px 4px;
+	mix-blend-mode: multiply;
+	opacity: 0.28;
+}
+
+@layer utilities {
+	.glass-panel {
+		background: var(--panel);
+		border: 1px solid var(--line);
+		box-shadow: var(--shadow);
+		backdrop-filter: blur(22px);
+	}
+
+	.premium-ring {
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.78),
+			0 12px 36px rgba(25, 22, 18, 0.12);
+	}
+
+	.display-font {
+		font-family: var(--font-display), serif;
+	}
+
+	.editorial-panel {
+		background:
+			linear-gradient(145deg, rgba(255, 253, 248, 0.94), rgba(245, 238, 226, 0.82)),
+			var(--panel);
+		border: 1px solid rgba(23, 19, 15, 0.12);
+		box-shadow:
+			inset 0 1px 0 rgba(255, 255, 255, 0.86),
+			0 26px 80px rgba(23, 19, 15, 0.12);
+	}
+
+	.ink-panel {
+		background:
+			linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 38%),
+			linear-gradient(160deg, #142334 0%, #111827 56%, #15120f 100%);
+		color: #fffaf0;
+		box-shadow: 0 30px 90px rgba(17, 24, 39, 0.28);
+	}
+
+	.fine-label {
+		font-size: 0.69rem;
+		font-weight: 700;
+		letter-spacing: 0.18em;
+		text-transform: uppercase;
+	}
+}

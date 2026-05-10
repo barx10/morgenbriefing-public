@@ -8,8 +8,7 @@ Appen viser hva som skjer de neste dagene og genererer en kort tekst med konkret
 
 ## Skjermbilder
 
-<!-- Legg til skjermbilder her -->
-<!-- ![Morgenbriefing](docs/screenshot.png) -->
+![Morgenbriefing](docs/screenshot.png)
 
 ---
 

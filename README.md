@@ -14,8 +14,7 @@ Appen viser hva som skjer de neste dagene og genererer en kort tekst med konkret
 
 ## Video
 
-<!-- Legg til demo-video her -->
-<!-- [![Demo](docs/thumbnail.png)](https://youtu.be/b1KjQSJOS2E) -->
+[![Demo](docs/thumbnail.png)](https://youtu.be/b1KjQSJOS2E)
 
 ---
 

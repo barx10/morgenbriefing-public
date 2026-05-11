@@ -88,7 +88,7 @@ npm run dev
 1. Push koden til GitHub
 2. Importer repoet på [vercel.com](https://vercel.com)
 3. Legg til miljøvariablene under *Settings → Environment Variables*
-   - Husk å sette `NEXTAUTH_URL` til din Vercel-URL (f.eks. `https://morgenbriefing.vercel.app`)
+   - Husk å sette `NEXTAUTH_URL` til din Vercel-URL (f.eks. `https://morgenassistenten.vercel.app`)
 4. Legg til Vercel-URLen som authorized redirect URI i Google Cloud Console
 
 ---
